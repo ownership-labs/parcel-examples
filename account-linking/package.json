@@ -1,7 +1,7 @@
 {
     "private": true,
     "name": "@oasislabs/parcel-examples-account-linking",
-    "version": "0.0.0",
+    "version": "0.5.0-internal.0",
     "description": "",
     "main": "public/index.html",
     "scripts": {
