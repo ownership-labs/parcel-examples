@@ -1,4 +1,4 @@
-node_examples := data-upload data-access compute
+node_examples := data-upload data-access compute compute2
 examples := $(node_examples) account-linking
 
 WORKER="../../offchain-compute/worker/bin/parcel-worker"
@@ -31,6 +31,9 @@ data-upload-test data-access-test: build
 
 compute-test: build
 	../cli/scripts/worker_wrap.sh "cd compute && npx node bin/main.js"
+
+compute2-test: build
+	../cli/scripts/worker_wrap.sh "cd compute2 && npx node bin/main.js"
 
 account-linking-test:
 	# TODO: Add account linking step
